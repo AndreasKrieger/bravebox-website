@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung — BRAVE Box</title>
+  <meta name="description" content="Datenschutzerklärung von BRAVE Box (App und Website).">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="app-surface">
+<header class="top-app-bar">
+  <div class="top-app-bar-inner">
+    <a class="brand" href="./index.html" aria-label="BRAVE Box Startseite">
+      <img src="./assets/logo.svg" alt="BRAVE Box Logo" width="120" height="46">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Navigation öffnen">Menü</button>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="./index.html#features">Funktionen</a>
+      <a href="./index.html#ablauf">Ablauf</a>
+      <a href="./index.html#preise">Preise</a>
+      <a href="./index.html#faq">FAQ</a>
+      <a href="https://github.com/AndreasKrieger/BraveBox-Releases/releases/latest">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page page-narrow">
+  <div class="legal-body">
+<h1 class="text-headline">Datenschutzerklärung</h1>
+<p><em>Stand: 9. August 2026</em></p>
+
+<h3>1. Verantwortlicher</h3>
+<p>Andreas Krieger<br />
+E-Mail: andreaskrieger.software@gmail.com</p>
+
+<h3>2. Datenverarbeitung im Überblick</h3>
+<p><strong>Lokal (ohne Übertragung):</strong> Ihre Musikdateien, DJ-Bibliotheken sowie nutzerspezifische Einstellungen (wie Bewertungen, Energiewerte und Play Counts) werden ausschließlich auf Ihrem Gerät verarbeitet und nicht an externe Server übertragen.</p>
+<p><strong>Übermittelt (nur mit Ihrer Einwilligung):</strong> Anonymisierte Nutzungs- und Fehlerdaten (Telemetrie) zur Verbesserung der Software sowie freiwillige Feedback-Nachrichten. Details in Abschnitt 3.</p>
+
+<h3>3. Telemetrie und Fehleranalyse (nur mit Ihrer Einwilligung)</h3>
+<p>Wenn Sie im Zustimmungsdialog das separate, freiwillige Opt-in für Telemetrie aktivieren, sendet die App anonymisierte Nutzungsdaten an den Dienstleister PostHog Inc. (PostHog Cloud EU, Server in der EU).</p>
+<p>Übermittelt werden:</p>
+<ul>
+  <li>Anwendungsereignisse (App-Start, genutzte Funktionen, abgeschlossene Konvertierungen, Anzahl konvertierter Tracks)</li>
+  <li>Fehler- und Absturzberichte (Fehlertyp und bereinigte Stacktraces; lokale Pfade, Benutzernamen und Zeilennummern werden vor der Übertragung entfernt)</li>
+  <li>Technische Angaben: App-Version, Betriebssystem, Spracheinstellung</li>
+  <li>Eine zufällige Sitzungskennung (kein Rückschluss auf Ihre Person)</li>
+  <li>Ein Ländercode, der serverseitig aus Ihrer IP-Adresse abgeleitet wird (grobe geografische Zuordnung). Ihre IP-Adresse wird dabei <strong>nicht gespeichert</strong>, sondern nur für diese Zuordnung verwendet und anschließend verworfen.</li>
+</ul>
+<p><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Sie können die Einwilligung jederzeit in den Einstellungen widerrufen; nach dem Widerruf werden keine weiteren Telemetriedaten gesendet.</p>
+<p><strong>Empfänger:</strong> PostHog Inc. (Verarbeitung auf EU-Servern). <a href="https://posthog.com/privacy" target="_blank" rel="noopener">Privacy Policy von PostHog</a>.</p>
+<p><strong>Speicherdauer:</strong> Die Ereignisdaten werden so lange gespeichert, wie es für die Auswertung erforderlich ist, und danach automatisch gelöscht.</p>
+
+<h3>4. Feedback (freiwillig)</h3>
+<p>Über das Feedback-Formular können Sie uns Nachrichten senden und freiwillig eine E-Mail-Adresse für Rückfragen angeben. Ihre Nachricht wird bereinigt (lokale Pfade und Benutzernamen werden entfernt) und über PostHog übertragen.</p>
+<p><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+
+<h3>5. Software-Updates (GitHub Releases)</h3>
+<p>Die App prüft automatisch auf Updates und lädt diese über GitHub Releases. Dabei werden Ihre IP-Adresse, der Client-Identifier (User-Agent) und die aktuelle App-Version an GitHub Inc. (USA) übertragen.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicheren und aktuellen Software-Versionen).<br />
+<strong>Empfänger:</strong> GitHub Inc., USA (Übermittlung auf Grundlage des EU-US Data Privacy Framework).</p>
+
+<h3>6. Lokale Speicherung</h3>
+<p>Die App speichert Konfiguration und Metadaten lokal unter <code>%LOCALAPPDATA%\BRAVEBox</code>:</p>
+<ul>
+  <li><code>.license</code> (lokale Beta-Lizenz)</li>
+  <li><code>.instance</code> (Geräte-ID)</li>
+  <li><code>.consent</code> (Ihre Zustimmung inklusive Telemetrie-Entscheidung)</li>
+  <li><code>track_metadata_cache.json</code> (Ihre DJ-Metadaten wie Bewertungen, Energiewerte, Play Counts)</li>
+  <li><code>startup_debug.log</code> (technische Logs; nur lokal, werden nicht übertragen)</li>
+</ul>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, § 25 Abs. 2 Nr. 2 TDDDG.</p>
+
+<h3>7. Ihre Rechte (Art. 15–22 DSGVO)</h3>
+<ul>
+  <li>Auskunft über die verarbeiteten Daten</li>
+  <li>Berichtigung unrichtiger Daten</li>
+  <li>Löschung („Recht auf Vergessenwerden")</li>
+  <li>Einschränkung der Verarbeitung</li>
+  <li>Datenübertragbarkeit</li>
+  <li>Widerspruch gegen die Verarbeitung</li>
+  <li>Widerruf Ihrer Einwilligung (Art. 7 Abs. 3 DSGVO)</li>
+  <li>Beschwerde bei einer Aufsichtsbehörde</li>
+</ul>
+<p><strong>Kontakt:</strong> andreaskrieger.software@gmail.com</p>
+
+<h3>8. Datenlöschung</h3>
+<p>Lokale Daten löschen Sie, indem Sie den Ordner <code>%LOCALAPPDATA%\BRAVEBox</code> entfernen. Eine Deinstallation entfernt die App, die dort gespeicherten Daten bleiben dabei bestehen und sollten bei Bedarf manuell gelöscht werden. Bei PostHog gespeicherte Telemetriedaten können Sie jederzeit über die Kontaktadresse zur Löschung anfordern.</p>
+
+<h3>9. Drittanbieter-Details</h3>
+<p><strong>PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> (Verarbeitung in der EU)<br />
+<strong>GitHub:</strong> <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></p>
+
+<h3>10. Zuständige Aufsichtsbehörde</h3>
+<p>Liste der Aufsichtsbehörden: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" target="_blank" rel="noopener">bfdi.bund.de</a></p>
+
+<h3>11. Anschrift des Verantwortlichen</h3>
+<p>Andreas Krieger<br />
+84405 Dorfen, Bayern Deutschland</p>
+<!-- WEB-ONLY-START -->
+<div class="entwurf-banner"><strong>ENTWURF — Web-Ergänzung noch nicht final:</strong> Diese Website soll auf GitHub Pages laufen. Beim Aufruf werden technisch bedingt IP-Adresse, User-Agent und aufgerufene Seite an GitHub Inc. (USA, EU-US Data Privacy Framework) übertragen. Die exakten Response-Header/Cookies werden per Go-Live-Gate (<code>curl -sI</code>) geprüft und dieser Absatz danach finalisiert.</div>
+<h3>Anhang: Hosting dieser Website (Web-Ergänzung)</h3>
+<p>Diese Website wird als statische Seite ohne eigene Tracker oder Cookies betrieben. Beim Seitenaufruf überträgt dein Browser technisch notwendig IP-Adresse, User-Agent und die angefragte Seite an den Hosting-Anbieter GitHub Inc., USA (Grundlage: EU-US Data Privacy Framework). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer verfügbaren Website).</p>
+<!-- WEB-ONLY-END -->
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <span class="brand-wordmark">BRAVE<span class="box">Box</span></span>
+      <p class="text-caption">Serato Crate- &amp; Playlist-Manager (Beta).</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="./impressum.html">Impressum</a></li>
+      <li><a href="./datenschutz.html">Datenschutz</a></li>
+      <li><a href="./agb.html">AGB</a></li>
+      <li><a href="./widerruf.html">Widerruf</a></li>
+      <li><a href="./barrierefreiheit.html">Barrierefreiheit</a></li>
+      <li><a href="./en/index.html">English</a></li>
+      <li><a href="https://github.com/AndreasKrieger/DJBox">Quellcode (GitHub)</a></li>
+      <li><a href="https://github.com/AndreasKrieger/BraveBox-Releases/releases/latest">Downloads</a></li>
+      <li><a href="https://www.reddit.com/r/BRAVEBOX/">Reddit</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>
