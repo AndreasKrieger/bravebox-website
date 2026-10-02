@@ -1,3 +1,2 @@
-# Pre-Launch: alles gesperrt. Beim Go-Live (Schritt 7) durch offene Seite + sitemap.xml ersetzen.
 User-agent: *
-Disallow: /
+Allow: /
