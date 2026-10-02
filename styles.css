@@ -91,6 +91,11 @@ body.app-surface {
     outline: 2px solid var(--md-sys-color-primary);
     outline-offset: 2px;
 }
+/* Fallback für Browser ohne :focus-visible-Unterstützung (identische Darstellung). */
+a:focus, button:focus, summary:focus {
+    outline: 2px solid var(--md-sys-color-primary);
+    outline-offset: 2px;
+}
 
 a { color: var(--md-sys-color-on-surface); }
 a:hover { color: var(--md-sys-color-primary); }
@@ -245,7 +250,7 @@ section:last-child { margin-bottom: 0; }
 .m3-card.elevated { box-shadow: var(--elevation-2); }
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
 }
 .card-grid .m3-card h3 { margin: 0 0 var(--spacing-sm); font-size: 1.05rem; }
@@ -440,7 +445,6 @@ footer {
 /* --- Responsiv (Breakpoints 840/600 wie layout.css) --- */
 @media (max-width: 840px) {
     .hero { grid-template-columns: 1fr; }
-    .card-grid { grid-template-columns: 1fr 1fr; }
     .steps { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     .nav-links.open {
@@ -458,7 +462,6 @@ footer {
     .nav-toggle { display: block; }
 }
 @media (max-width: 600px) {
-    .card-grid { grid-template-columns: 1fr; }
     .text-display { font-size: 2.2rem; line-height: 2.6rem; }
     .m3-card { padding: var(--spacing-lg); }
 }

@@ -7,9 +7,13 @@
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.nav-links');
   if (toggle && nav) {
+    var labels = document.documentElement.lang === 'en'
+      ? ['Open navigation', 'Close navigation']
+      : ['Navigation öffnen', 'Navigation schließen'];
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? labels[1] : labels[0]);
     });
   }
 
