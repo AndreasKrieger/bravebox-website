@@ -71,7 +71,7 @@
     <div class="card-grid mt-md">
       <div class="m3-card"><h3>Crate parsing</h3><p class="text-body">Read existing Serato crates — with track paths, metadata and matching, even for moved files.</p></div>
       <div class="m3-card"><h3>Playlist builder</h3><p class="text-body">Filter tracks, arrange a set on one timeline, write it back to Serato as a new <code>.crate</code> file.</p></div>
-      <div class="m3-card"><h3>Key &amp; BPM matching</h3><p class="text-body">Camelot compatibility, BPM and energy matching with a recommendation score per track.</p></div>
+      <div class="m3-card"><h3>Key, BPM &amp; energy matching</h3><p class="text-body">Camelot compatibility plus BPM and energy matching, with a recommendation score per track: high energy never lands in quiet passages — warmup stays warmup, peak stays peak.</p></div>
       <div class="m3-card"><h3>3-track journeys</h3><p class="text-body">Find bridges across three tracks when two tracks do not mix directly.</p></div>
       <div class="m3-card"><h3>Energy curve</h3><p class="text-body">Paint your dramaturgy as a curve — presets for warmup, peak and wave, plus custom curves.</p></div>
       <div class="m3-card"><h3>Preview player</h3><p class="text-body">Audition tracks right in the app before they make the set.</p></div>
@@ -129,6 +129,7 @@
   <section id="faq" class="faq" aria-labelledby="faq-title">
     <h2 class="text-headline" id="faq-title">FAQ</h2>
     <div class="mt-md">
+      <details><summary>What is energy matching?</summary><div class="answer"><p>BRAVE Box rates the energy of every track. Recommendations favour tracks whose energy fits the set so far — steered by your energy curve. No peak slips into the warmup, no comedown into the climax.</p></div></details>
       <details><summary>Can BRAVE Box migrate to Rekordbox?</summary><div class="answer"><p>Not yet. Rekordbox 7 migration and direct USB export for CDJ/XDJ are planned as an update, with no date. The beta handles Serato crates only.</p></div></details>
       <details><summary>Does the app modify my music files?</summary><div class="answer"><p>No. BRAVE Box reads crate files and metadata and writes new <code>.crate</code> files. Audio files are never touched. Still: back up your library before a gig, as always.</p></div></details>
       <details><summary>What happens after the beta?</summary><div class="answer"><p>The beta is free. Final pricing is undecided. Updates arrive automatically via GitHub Releases.</p></div></details>
