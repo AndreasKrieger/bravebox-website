@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://andreaskrieger.github.io/bravebox-website/sitemap.xml
